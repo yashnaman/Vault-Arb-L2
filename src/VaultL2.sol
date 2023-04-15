@@ -11,7 +11,7 @@ interface IERC20WNameAndSymbol is IERC20 {
     function symbol() external view returns (string memory);
 }
 
-contract Vault is ERC4626 {
+contract VaultMainnet is ERC4626 {
     constructor(IERC20 asset_) ERC4626(asset_) ERC20("Vault", "VLT") {}
 
     function _deposit(
